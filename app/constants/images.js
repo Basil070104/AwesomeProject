@@ -4,9 +4,9 @@ const triangleRat = require('../assets/images/SORat3.png');
 const pentagonRat = require('../assets/images/SORat4.png');
 const cubeRat = require('../assets/images/SORat5.png');
 const sphereRat = require('../assets/images/SORat6.png');
-const susRat = require('../assets/images/susrate.png');
-const tandemRats = require('../assets/images/tandemrate.png');
-const workoutRat = require('../assets/images/workoutrate.png');
+const susRat = require('../assets/images/susrat.png');
+const tandemRats = require('../assets/images/tandemrats.png');
+const workoutRat = require('../assets/images/workoutrat.png');
 
 //work in progress
 export default {
