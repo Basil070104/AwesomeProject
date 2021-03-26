@@ -15,7 +15,7 @@ const theme = {
 
 const Stack = createStackNavigator()
 
- const App = () => {
+const App = () => {
     return (
         <NavigationContainer theme={theme}>
             <Stack.Navigator

@@ -5,5 +5,5 @@ import Profile from "./Profile";
 export {
     Login,
     Home,
-    Profile
+    Profile,
 };
