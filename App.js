@@ -2,6 +2,7 @@ import React from 'react';
 import { registerRootComponent } from 'expo';
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
+import 'react-native-gesture-handler';
 
 import {Login, Home, Profile} from "./app/screens";
 
@@ -25,6 +26,7 @@ const App = () => {
                 initialRouteName={'Login'}
             >
                 <Stack.Screen name="Login" component={Login}/>
+                <Stack.Screen name="Home" component={Home}/>
 
             </Stack.Navigator>
         </NavigationContainer>

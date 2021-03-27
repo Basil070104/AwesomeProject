@@ -16,13 +16,11 @@ import {
     Dimensions
 } from "react-native";
 import IconAntDesign from 'react-native-vector-icons/AntDesign';
+import 'react-native-gesture-handler';
 
 import { CONSTANTS, SIZES, FONTS, images, COLORS} from "../constants";
-import { DownArrow } from "../constants/icons/DownArrow";
 
-
-
-const Login = () => {
+const Login = ({navigation}) => {
 
     const [name,setName] = React.useState(null);
     const [email,setEmail] = React.useState(null);
@@ -86,11 +84,12 @@ const Login = () => {
                         defaultValue={password}
                         placeholder="Password"
                         autoCapitalize="none"
+                        secureTextEntry={true}
                     />
                 </View>
                 <TouchableOpacity
                     style={styles.button}
-                    onPress={()=> console.log("Continue Pressed")}
+                    onPress={()=> navigation.navigate('Home')}
                 >
                     <Text style={styles.buttoText}>Continue</Text>
                 </TouchableOpacity>       
