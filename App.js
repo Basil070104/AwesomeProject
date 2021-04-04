@@ -16,6 +16,8 @@ const theme = {
 
 const Stack = createStackNavigator()
 
+
+
 const App = () => {
     return (
         <NavigationContainer theme={theme}>
@@ -27,8 +29,8 @@ const App = () => {
             >
                 <Stack.Screen name="Login" component={Login}/>
                 <Stack.Screen name="Home" component={Home}/>
-
             </Stack.Navigator>
+
         </NavigationContainer>
 
     ) 
